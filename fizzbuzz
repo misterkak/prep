@@ -1,0 +1,13 @@
+x = 1
+100.times do
+	#starting from 1 repeat this process 100 times
+	if x % 3 == 0 then puts x % 5 == 0 ? "fizzbuzz" : "fizz" end
+		#if the number is divisible by 3 then see if it is also divisible by 5
+		#divisible by both output fizzbuzz, else divisible only by 3 output fizz   	
+	if x % 5 == 0 && x % 3 != 0 then puts "buzz" end
+		#if the number is divisible by 5 but not 3 then output buzz
+	puts x if x % 5 != 0 && x % 3 != 0
+		#if the number is neither divisible by 3 nor 5 then output the number
+   	x += 1
+   		#increment
+end
